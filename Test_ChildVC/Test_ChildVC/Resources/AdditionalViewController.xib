@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdditionalViewController" customModule="Test_ChildVC" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Y2r-5L-MDh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sTj-Hu-Eih">
+                    <rect key="frame" x="20" y="94" width="374" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="km2-5e-foP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle.and.pencil.and.ellipsis" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="x1n-UB-i7p">
+                    <rect key="frame" x="20" y="174" width="374" height="198.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="4ER-2C-LiU"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sTj-Hu-Eih" secondAttribute="trailing" constant="20" id="NmN-S0-0lS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="x1n-UB-i7p" secondAttribute="trailing" constant="20" id="fWj-pv-9HF"/>
+                <constraint firstItem="sTj-Hu-Eih" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="g58-Xj-vbI"/>
+                <constraint firstItem="sTj-Hu-Eih" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="kxO-N2-MQQ"/>
+                <constraint firstItem="x1n-UB-i7p" firstAttribute="top" secondItem="sTj-Hu-Eih" secondAttribute="bottom" constant="20" id="su8-JF-lcl"/>
+                <constraint firstItem="x1n-UB-i7p" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="tdN-9o-3cG"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
